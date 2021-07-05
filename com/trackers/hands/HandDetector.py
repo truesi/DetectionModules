@@ -1,9 +1,8 @@
 import mediapipe as mp
 import cv2
-import time
 
 
-class HandDetector():
+class HandDetector:
     def __init__(self, mode=False, maxHands=2, detecionConf=0.5, trackConf=0.5):
         self.mode = mode
         self.maxHands = maxHands
@@ -39,11 +38,10 @@ class HandDetector():
                 cx, cy = int(lm.x * weight), int(lm.y * height)
                 landMarkList.append([id, cx, cy])
                 if draw:
-                    cv2.circle(img, (cx,cy), 5, (255,0,255), cv2.FILLED)
+                    cv2.circle(img, (cx, cy), 5, (255, 0, 255), cv2.FILLED)
                 # print(cx, cy)
                 # to track every node position of landmark
                 # if id == 4:
                 #     cv2.circle(img, (cx,cy), 5 , (255,0,255), cv2.FILLED)
 
         return landMarkList
-
