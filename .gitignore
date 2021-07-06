@@ -1,0 +1,8 @@
+.idea/*
+face_recognition/*
+/face_recognition/
+com/recognizer/face/dataset/*
+com/recognizer/face/labels.pickle
+com/recognizer/face/trainer.yml
+com/FaceRecognizer.py
+com/FaceTester.py

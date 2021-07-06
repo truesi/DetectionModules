@@ -14,7 +14,7 @@ class BodyDetector:
         contours, _ = cv2.findContours(dilated, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
         # cv2.drawContours(frame1, contours, -1, (255, 0, 255), 2)
         for c in contours:
-            if cv2.contourArea(c) < 10000:
+            if cv2.contourArea(c) < 15000:
                 continue
             x, y, width, height = cv2.boundingRect(c)
             cv2.rectangle(frame1, (x, y), (x + width, y + height), (255, 0, 255), 5)

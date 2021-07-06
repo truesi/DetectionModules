@@ -3,7 +3,7 @@ import cv2
 
 
 class HandDetector:
-    def __init__(self, mode=False, maxHands=2, detecionConf=0.5, trackConf=0.5):
+    def __init__(self, mode=False, maxHands=2, detecionConf=0.7, trackConf=0.5):
         self.mode = mode
         self.maxHands = maxHands
         self.detectionConf = detecionConf
@@ -26,7 +26,6 @@ class HandDetector:
         return img
 
     def findPosition(self, img, handNumber=0, draw=True):
-
         landMarkList = []
         if self.result.multi_hand_landmarks:
             myHand = self.result.multi_hand_landmarks[handNumber]
