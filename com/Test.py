@@ -4,10 +4,15 @@ from com.trackers.hands import HandDetector as hd
 from com.trackers.body import BodyDetector as bd
 from com.recognizer.face import FaceRecognizerModule as fr
 
+# for fps
 previousTime = 0
 currentTime = 0
 # to capture video
+widthCam, heightCam = 640, 640
 camera1 = cv2.VideoCapture(0)
+camera1.set(3, widthCam)
+camera1.set(4, heightCam)
+
 handDetector = hd.HandDetector(detecionConf=0.5)
 bodyDetector = bd.BodyDetector()
 faceRecognizer = fr.FaceRecognizerModule()

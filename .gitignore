@@ -8,3 +8,5 @@ com/FaceRecognizer.py
 com/FaceTester.py
 venv2
 venv
+com/recognizer/gestures
+com/controllers/snap_controller.py
