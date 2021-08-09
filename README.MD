@@ -25,12 +25,12 @@ To test the results you may start the main py file
 ```
 py test.py
 ```
-![all modules](https://imgur.com/izUcE7v)
+![all modules](1_1.gif)
 
 running separate modules like volume control and finger counter is optional but the output of them will be different
 
 
-![volume control](https://imgur.com/VbygkY9)
+![volume control](1.gif)
 ### Connect with me:
 
 [<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin] LinkedIn <br>
