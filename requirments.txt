@@ -1,0 +1,5 @@
+pip install keras==2.3.1
+pip install opencv-python
+pip install numpy
+pip install mediapipe
+pip install pycaw

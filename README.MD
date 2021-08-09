@@ -1,13 +1,40 @@
-### THIS PROJECT IS LICENSED UNDER GNU General Public License
+## ***THIS PROJECT IS LICENSED UNDER GNU General Public License***
 
 Purpose of the project is to show understanding of a python and libraries such as Mediapipe and openCV
 Further plans are to create very own home security systems and many more but in a separate project so make sure to follow
 If you want to contribute please be my guest
 
+
+## Required dependencies
+In order to start the project first you need required libraries to be installed. To do so you can simply enter the command into terminal
+```
+pip install -r requirments.txt
+```
+or install them manually
+```
+keras
+opencv-python
+numpy
+mediapipe
+pycaw
+```
+
+## Testing functionality
+To test the results you may start the main py file
+
+```
+py test.py
+```
+![all modules](https://imgur.com/izUcE7v)
+
+running separate modules like volume control and finger counter is optional but the output of them will be different
+
+
+![volume control](https://imgur.com/VbygkY9)
 ### Connect with me:
 
-[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
-[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
+[<img align="left" alt="codeSTACKr | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin] LinkedIn <br>
+[<img align="left" alt="codeSTACKr | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram] Instagram
 
 <br />
 
