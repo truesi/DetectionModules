@@ -39,7 +39,6 @@ while True:
         # thumb check
         if lmList[tipIds[0]][1] < lmList[tipIds[0] - 1][1]:
             fingers.append(1)
-        # winsound.PlaySound(BASE_DIR + folderPath + '/' + audioList[0], winsound.SND_ASYNC)
         else:
             fingers.append(0)
 
