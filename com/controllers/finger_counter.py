@@ -7,6 +7,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 folderPath = "/audio"
 myList = os.listdir(BASE_DIR + folderPath)
 audioList = []
+
 for wavPath in myList:
     audios = cv2.imread(f'{folderPath}/{wavPath}')
     audioList.append(wavPath)
@@ -25,7 +26,11 @@ finger_pos = {
     'thumb': [1, 0, 0, 0, 0]
 }
 values = finger_pos.values()
+
 #print(values)
+soundPlayed = False
+
+substitute = [0,0,0,0,0]
 
 while True:
     success, frame = camera.read()
@@ -50,7 +55,10 @@ while True:
                 fingers.append(0)
 
         totalFingers = fingers.count(1)
-        winsound.PlaySound(BASE_DIR + folderPath + '/' + audioList[totalFingers - 1], winsound.SND_APPLICATION)
+
+        if not fingers.__eq__(substitute):
+            winsound.PlaySound(BASE_DIR + folderPath + '/' + audioList[totalFingers - 1], winsound.SND_APPLICATION)
+            substitute = fingers
 
             # if lmList[fing] == finger_pos[fing]:
             #     print(finger_pos)

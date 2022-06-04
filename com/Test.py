@@ -20,6 +20,7 @@ faceRecognizer = fr.FaceRecognizerModule()
 while True:
     success, frame = camera1.read()
     success, frame2 = camera1.read()
+
     frame = handDetector.findHands(frame)
     frame = bodyDetector.findBodyMovement(frame, frame2)
     frame = faceRecognizer.recognizeFace(frame)
